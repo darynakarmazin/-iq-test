@@ -230,6 +230,7 @@ a {
   align-items: center;
 }
 .combine-section {
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../images/rain_bk2.jpg);
@@ -237,7 +238,15 @@ a {
   padding-bottom: 13px;
   text-align: center;
 }
-
+.footer-lightninig-img {
+  position: absolute;
+  right: 0;
+}
+.footer-lightninig-img-down {
+  position: absolute;
+  left: 0;
+  top: 45%;
+}
 .about-text {
   text-align: left;
   font-family: "Merriweather", serif;
