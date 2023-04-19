@@ -28,6 +28,7 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 img {
   display: block;
@@ -355,4 +356,72 @@ a {
 .menu-site-nav .link:hover,
 .menu-site-nav .link:focus {
   color: #f4ce0c;
+}
+/* test page */
+.test-header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+}
+.test-header-title {
+  font-family: "Yeseva One", cursive;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffc700;
+}
+.quiz-section {
+  padding: 129px 0 25px;
+  align-items: center;
+  background-image: url(../images/quiz-bgc-rain.png);
+}
+.quiz-container {
+  padding: 0;
+}
+.quiz-questions-item__question {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-bottom: 38px;
+}
+.quiz-questions-str {
+  padding: 0 35px;
+  background-color: #f2f3f3;
+  opacity: 0.15;
+  margin-bottom: 8px;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 58px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  /* color: #ffffff; */
+}
+.quiz-questions-item__answers {
+  margin-bottom: 138px;
+}
+.quiz-controls {
+  text-align: center;
+}
+.btn-next {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #0d0c11;
+  padding: 13px 17px 10px;
+  min-width: 189px;
+  background: radial-gradient(50% 50% at 50% 50%, #ffc700 0%, #ffc700 100%);
+  border-radius: 20px;
 }

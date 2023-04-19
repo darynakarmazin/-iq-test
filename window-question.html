@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- connect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;500;900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>IQ TEST</title>
+  </head>
+  <body>
+    <header class="header-section section">
+      <div class="container test-header-container">
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+        <img
+          src="./images/header-blue-brain.png"
+          alt="Blue brain"
+          width="48"
+          height="47"
+        />
+        <h1 class="test-header-title">тест на определение IQ</h1>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-bnt js-close-menu">
+            <img
+              src="./images/cross-mobile-menu.svg"
+              alt=""
+              width="28"
+              height="28"
+            />
+          </button>
+          <ul class="menu-site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Главная</a>
+            </li>
+            <li class="item">
+              <a href="#about" class="link">Информация о тесте</a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">Пройти тест</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section quiz-section">
+        <div class="container quiz-container">
+          <!-- makrup -->
+          <div class="quiz" id="quiz">
+            <div class="quiz-indicator"></div>
+            <div class="quiz-questions">
+              <div class="quiz-questions-item">
+                <div class="quiz-questions-item__question">Вопрос 1</div>
+                <ul class="quiz-questions-item__answers">
+                  <li class="quiz-questions-str">
+                    <label>
+                      <input type="radio" name="q1"/>
+                      Ответ 1
+                    </label>
+                  </li>
+                  <li class="quiz-questions-str">
+                    <label>
+                      <input type="radio" name="q1"/>
+                      Ответ 2
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="quiz-results"></div>
+            <div class="quiz-controls">
+              <button class="btn-next">Далее</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
