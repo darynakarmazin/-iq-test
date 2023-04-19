@@ -390,12 +390,11 @@ a {
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #ffffff;
-  margin-bottom: 38px;
+  /* margin-bottom: 38px; */
 }
 .quiz-questions-str {
   padding: 0 35px;
-  background-color: #f2f3f3;
-  opacity: 0.15;
+  background-color: rgba(242, 243, 243, 0.15);
   margin-bottom: 8px;
   font-family: "PT Serif";
   font-weight: 400;
@@ -403,7 +402,7 @@ a {
   line-height: 58px;
   letter-spacing: 0.05em;
   text-transform: capitalize;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 .quiz-questions-item__answers {
   margin-bottom: 138px;
@@ -424,4 +423,6 @@ a {
   min-width: 189px;
   background: radial-gradient(50% 50% at 50% 50%, #ffc700 0%, #ffc700 100%);
   border-radius: 20px;
+  margin-top: auto;
+  margin-bottom: 25px;
 }
