@@ -118,6 +118,7 @@ a {
   color: #ffc700;
 }
 .gotest-button {
+  display: inline-block;
   background-color: #ffc700;
   font-family: "Merriweather", serif;
   font-weight: 700;
