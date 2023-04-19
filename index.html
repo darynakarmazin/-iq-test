@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- connect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=PT+Serif:wght@400;700&family=Roboto:wght@300;400;500;900&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>IQ TEST</title>
+  </head>
+  <body>
+    <header class="header-section section">
+      <div class="container">
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <img src="./images/menu.svg" alt="" />
+        </button>
+      </div>
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-bnt js-close-menu">
+            <img
+              src="./images/cross-mobile-menu.svg"
+              alt=""
+              width="28"
+              height="28"
+            />
+          </button>
+          <ul class="menu-site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Главная</a>
+            </li>
+            <li class="item">
+              <a href="#about" class="link">Информация о тесте</a>
+            </li>
+            <li class="item">
+              <a href="#" class="link">Пройти тест</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section hero">
+        <div class="container">
+          <p class="hero-text">Пройдите точный и быстрый</p>
+          <h1 class="hero-title">Tест на определение IQ</h1>
+          <button type="button" class="gotest-button">Пройти тест</button>
+          <p class="hero-discription">
+            <span class="hero-discription-span"
+              >и получите рекомендации по развитию своего интеллекта</span
+            >
+            <br />
+            и улучшению финансового благосостояния и личной жизни
+          </p>
+          <a class="about-link" href="#about">Подробнее</a>
+        </div>
+      </section>
+      <section class="section second-section">
+        <div class="container second-container">
+          <img
+            class="comas-svg-up"
+            src="./images/“.svg"
+            alt=""
+            width="23"
+            height="23"
+          />
+          <p class="second-section-text">
+            Профессиональный IQ-тест позволяет не только определить коэффициент
+            вашего интеллекта, но и выработать список рекомендаций для повышения
+            этого показателя.
+          </p>
+          <img
+            class="comas-svg-down"
+            src="./images/“down.svg"
+            alt=""
+            width="23"
+            height="23"
+          />
+        </div>
+      </section>
+      <section class="section third-section">
+        <div class="container third-container">
+          <p class="third-section-text">
+            Также по результатам теста <br /><b
+              ><span class="third-section-text-up">вы получите</span></b
+            >
+            подробные
+            <b
+              ><span class="third-section-text-up"><br />советы</span></b
+            >
+            по определению наиболее перспективной
+            <b
+              ><span class="third-section-text-up">для вашего <br />типа</span>
+              интеллекта
+              <span class="third-section-text-up"
+                >сферы<br />
+                деятельности</span
+              ></b
+            >,<br />
+            которая принесет вам скорейший финансовый результат.
+          </p>
+          <div class="third-section-wrapper">
+            <img src="./images/325-01.png" alt="brain part" />
+            <button type="button" class="gotest-button">Пройти тест</button>
+          </div>
+        </div>
+      </section>
+      <div class="section combine-section">
+        <section class="section" id="about">
+          <div class="container">
+            <p class="about-text">
+              Прохождение теста займет у вас не более
+              <span class="hero-discription-span"><b>12 минут</b></span
+              >, а его <b>результаты</b> вы сможете
+              <span class="hero-discription-span"
+                ><b>использовать всю жизнь</b></span
+              >.
+            </p>
+            <p class="about-text-window">
+              Профессиональная интерпретация и детально
+              <b>проработанные рекомендации</b> позволят вам качественно
+              <b>изменить все аспекты своей жизни:</b> от финансового до
+              любовного.
+            </p>
+            <button type="button" class="gotest-button footer-gotest-button">
+              Пройти тест
+            </button>
+          </div>
+        </section>
+        <footer>
+          <div class="container">
+            <p class="footer-text">&copy; 2019</p>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
