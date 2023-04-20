@@ -374,7 +374,7 @@ a {
   color: #ffc700;
 }
 .quiz-section {
-  height: 100vh;
+  height: 972px;
   padding: 17px 0 25px;
   align-items: center;
   background-image: url(../images/quiz-bgc-rain.png);
@@ -575,6 +575,14 @@ a {
   letter-spacing: 0.1em;
   color: #3bde7c;
 }
+#count-down {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #3bde7c;
+}
 .results-text-btn {
   display: flex;
   gap: 20px;
@@ -589,9 +597,13 @@ a {
   font-size: 15px;
   line-height: 18px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #ffffff;
 }
-.results-text-btn__icon{
-  fill:white;
+.results-text-btn__icon {
+  fill: white;
+}
+.count-down-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
