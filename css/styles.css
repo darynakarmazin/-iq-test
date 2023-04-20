@@ -390,7 +390,6 @@ a {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #ffffff;
   margin-bottom: 38px;
 }
@@ -403,8 +402,12 @@ a {
   font-size: 18px;
   line-height: 58px;
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #ffffff;
+}
+.quiz-questions-str:hover,
+.quiz-questions-str:focus {
+  background: #ffc700;
+  color: #000000;
 }
 /* .quiz-questions-item__answers {
   margin-bottom: 98px;
@@ -440,7 +443,6 @@ a {
 .quiz-indicator {
   font-family: "PT Serif";
   letter-spacing: 0.05em;
-  text-transform: capitalize;
   color: #ffffff;
   margin-bottom: 100px;
 }
