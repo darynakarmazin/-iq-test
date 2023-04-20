@@ -378,7 +378,6 @@ a {
   padding: 17px 0 25px;
   align-items: center;
   background-image: url(../images/quiz-bgc-rain.png);
-
 }
 .quiz-container {
   display: block;
@@ -517,4 +516,82 @@ a {
   letter-spacing: 0.05em;
   color: #ffffff;
   margin-top: 38px;
+}
+.quiz-results {
+  text-align: center;
+  padding: 0 15px;
+  color: #ffffff;
+}
+.results-text-ready {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+.results-text-ratio {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 22px;
+}
+.results-text-ratio__span {
+  text-decoration-line: underline;
+}
+.results-text-result {
+  display: block;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #3bde7c;
+  margin-bottom: 27px;
+}
+.results-text-infoprivasy {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 13px;
+}
+.results-text-call {
+  display: block;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #3bde7c;
+}
+.results-text-btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #eb1b00;
+  border-radius: 5px;
+  padding: 28px 22px;
+
+  font-family: "Roboto";
+  text-align: left;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.results-text-btn__icon{
+  fill:white;
 }
