@@ -598,6 +598,7 @@ a {
   line-height: 18px;
   letter-spacing: 0.05em;
   color: #ffffff;
+  margin-bottom: 25px;
 }
 .results-text-btn__icon {
   fill: white;
@@ -606,4 +607,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.dataMarkup {
+  text-align: left;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
 }

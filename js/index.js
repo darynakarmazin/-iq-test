@@ -201,7 +201,7 @@ const renderResults = () => {
 <path d="M27.9572 21.7434L22.9688 19.066C21.306 18.1641 21.2497 18.756 19.5023 20.6161C19.0796 21.067 18.2905 22.2507 17.3604 22.0252C15.4158 21.5461 11.7802 18.6996 10.5965 17.4032C10.0328 16.7832 7.60909 13.824 7.5809 12.8657C7.52454 11.4002 10.7374 10.6675 9.69463 7.87733L7.46817 2.88894C5.38263 -1.90218 -0.451265 5.76361 0.0278472 9.34285C1.2679 18.1641 16.7404 32.4248 25.3644 27.7182C27.2808 26.6472 29.8737 22.8989 27.9572 21.7434Z" fill="white"/>
 </svg></span>
 <span>Позвонить и прослушать результат</span></button>
-<div>РЕНДЕР РЕЗУЛЬТАТА ЗАПРОСА</div>
+<div class="dataMarkup"></div>
       `;
     results.innerHTML = content;
     setInterval(updateCountDown, 1000);
@@ -214,6 +214,31 @@ const renderResults = () => {
       seconds = seconds < 10 ? "0" + seconds : seconds;
       countDownEl.innerHTML = `${minutes}:${seconds}`;
       time--;
+    }
+
+    const resultsBtn = document.querySelector(".results-text-btn");
+    resultsBtn.addEventListener("click", fetchResults);
+
+    function fetchResults() {
+      return fetch(`https://swapi.dev/api/people/1/`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(response.status);
+          }
+          return response.json();
+        })
+        .then(dataMarkup)
+        .catch();
+    }
+
+    const dataMarkupDiv = document.querySelector(".dataMarkup");
+    function dataMarkup(userdata) {
+      const data = `
+      <li>&#128681; Name : ${userdata.name}</li>
+      <li>&#128699; Gender : ${userdata.gender}</li>
+      <li>&#9410; Birth year : ${userdata.birth_year}</li>`;
+
+      dataMarkupDiv.innerHTML = data;
     }
   };
   let timeoutID = setTimeout(afterRenderResults, 5000);
