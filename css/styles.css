@@ -452,3 +452,26 @@ a {
 .results--visible {
   display: block;
 }
+
+#myProgress {
+  margin: 0 30px;
+  position: relative;
+  width: 260px;
+  height: 11px;
+  opacity: 0.75;
+  background: #f2f3f3;
+  border-radius: 10.5px;
+}
+#myBar {
+  position: absolute;
+  width: 8%;
+  height: 100%;
+  background: #3bde7c;
+  border-radius: 10.5px;
+}
+#label {
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  color: white;
+}

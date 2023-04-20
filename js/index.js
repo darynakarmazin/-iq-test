@@ -162,41 +162,48 @@ const renderQuestions = (index) => {
 };
 
 const renderResults = () => {
-  let content = "";
+  
+  const afterRenderResults = () => {
+    indicator.classList.add("indicator--hidden");
+    let content = "";
 
-  const getAnswers = (index) => {
-    return DATA[index].answers
-      .map((answer) => {
-        return `<li class="quiz-results-str">${answer.value}</li>`;
-      })
-      .join("");
-  };
+    const getAnswers = (index) => {
+      return DATA[index].answers
+        .map((answer) => {
+          return `<li class="quiz-results-str">${answer.value}</li>`;
+        })
+        .join("");
+    };
 
-  DATA.forEach((question, index) => {
-    content += `
+    DATA.forEach((question, index) => {
+      content += `
     <div class="quiz-results-item">
         div class="quiz-results-item__question">${question.question}</div>
         <ul class="quiz-results-item__answers">${getAnswers[index]}</ul>
     </div>`;
-  });
-  results.innerHTML = content;
+    });
+    results.innerHTML = content;
+  };
+  let timeoutID = setTimeout(afterRenderResults, 5000);
 };
 
 const renderIndicator = (currentStep) => {
-  indicator.innerHTML = `${currentStep}/${DATA.length}`;
+  document.getElementById("label").innerHTML = `${currentStep}/${DATA.length}`;
+  const elem = document.getElementById("myBar");
+  let width = 8;
+  elem.style.width = `${currentStep * 8.33}%`;
 };
 
 quiz.addEventListener("change", (event) => {
   if (event.target.classList.contains("answer-input")) {
     localResults[event.target.name] = event.target.value;
-    btnNext.disabled = false;
     console.log(localResults);
+    btnNext.disabled = false;
   }
 });
 
 btnNext.addEventListener("click", (event) => {
   if (DATA.length === Number(questions.dataset.currentStep) + 1) {
-    indicator.classList.add("indicator--hidden");
     questions.classList.add("questions--hidden");
     results.classList.add("results--visible");
     btnNext.classList.add("btn-next--hidden");
