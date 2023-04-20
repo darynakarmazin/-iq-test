@@ -162,7 +162,9 @@ const renderQuestions = (index) => {
 };
 
 const renderResults = () => {
-  
+  const spinner = document.querySelector(".spinner");
+  spinner.style.display = 'block';
+
   const afterRenderResults = () => {
     indicator.classList.add("indicator--hidden");
     let content = "";

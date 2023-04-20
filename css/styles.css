@@ -378,6 +378,7 @@ a {
   padding: 17px 0 25px;
   align-items: center;
   background-image: url(../images/quiz-bgc-rain.png);
+
 }
 .quiz-container {
   display: block;
@@ -474,4 +475,46 @@ a {
   font-size: 10px;
   line-height: 10px;
   color: white;
+}
+.spinner {
+  display: none;
+  text-align: center;
+}
+.spinner__animation {
+  display: inline-block;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border-top: 5px solid rgba(59, 222, 124, 0.1);
+  border-right: 5px solid rgba(59, 222, 124, 0.1);
+  border-bottom: 5px solid rgba(59, 222, 124, 0.1);
+  border-left: 5px solid rgb(129, 138, 145);
+  animation: loading-spinner 1s infinite linear;
+}
+.spinner__info {
+  display: block;
+  padding: 50px 40px;
+  font-family: "PT Serif";
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner__text {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  margin-top: 38px;
 }
