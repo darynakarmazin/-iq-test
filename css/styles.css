@@ -394,13 +394,13 @@ a {
   margin-bottom: 18px;
 }
 .quiz-questions-str {
-  padding: 0 35px;
+  padding: 10px 35px;
   background-color: rgba(242, 243, 243, 0.15);
   margin-bottom: 8px;
   font-family: "PT Serif";
   font-weight: 400;
   font-size: 18px;
-  line-height: 58px;
+  line-height: 20px;
   letter-spacing: 0.05em;
   color: #ffffff;
 }
