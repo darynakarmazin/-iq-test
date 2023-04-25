@@ -391,7 +391,7 @@ a {
   text-align: center;
   letter-spacing: 0.05em;
   color: #ffffff;
-  margin-bottom: 38px;
+  margin-bottom: 18px;
 }
 .quiz-questions-str {
   padding: 0 35px;
@@ -618,4 +618,44 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+}
+
+.answer-input {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+}
+
+.fake-answer-input {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 39px;
+}
+
+.fake-answer-input::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: #2950c2;
+  border: 1px solid #272727;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+}
+
+.answer-input:checked + .fake-answer-input::before {
+  display: inline-block;
 }

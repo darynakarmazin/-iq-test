@@ -18,7 +18,9 @@ const renderQuestions = (index) => {
       .map((answer) => {
         return `<li class="quiz-questions-str">
             <label>
-                <input class="answer-input" type="radio" name=${index} value="${answer.id}"/>${answer.value}
+                <input class="answer-input" type="radio" name=${index} value="${answer.id} - ${answer.value}"/>
+                <span class="fake-answer-input"></span>
+                    ${answer.value}
             </label>
         </li>`;
       })

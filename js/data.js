@@ -1,6 +1,6 @@
 export const DATA = [
   {
-    question: "ваш пол:",
+    question: "Bаш пол:",
     answers: [
       {
         id: "0.1",
